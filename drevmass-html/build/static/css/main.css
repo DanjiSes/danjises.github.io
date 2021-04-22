@@ -4171,6 +4171,12 @@ section {
 a:hover {
   color: #00b5af; }
 
+.js-reviews-slider:not(.slick-initialized),
+.js-bigPreviewSlider:not(.slick-initialized),
+.js-previewsSlider:not(.slick-initialized),
+.slick-slider:not(.slick-initialized) {
+  display: none; }
+
 @keyframes phoneAnimation {
   from {
     opacity: 0; }
@@ -4446,8 +4452,10 @@ a:hover {
   color: #fff; }
 
 .btn {
+  border: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 15px 45px 15px 25px;
   text-decoration: none !important;
   box-shadow: 0px 11px 22px rgba(0, 0, 0, 0.25);
@@ -4635,6 +4643,24 @@ a:hover {
     grid-column: 1 / span 2;
     grid-row: 2 / span 1; }
 
+.order {
+  padding-top: 100px; }
+  .order .lead:first-of-type {
+    font-size: 1.1875rem; }
+  .order .slick-current {
+    border-color: #00b5af !important; }
+
+.product {
+  padding: 25px 30px; }
+
+.list-checked {
+  padding-left: 14px; }
+  .list-checked li {
+    padding-left: 10px;
+    line-height: 1.75rem; }
+    .list-checked li::marker {
+      content: url("data:image/svg+xml,%3Csvg width='14' height='16' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.13 7.67L3.15 8.65L6.3 11.8L13.3 4.8L12.32 3.82L6.3 9.84L4.13 7.67ZM12.6 9C12.6 12.08 10.08 14.6 7 14.6C3.92 14.6 1.4 12.08 1.4 9C1.4 5.92 3.92 3.4 7 3.4C7.56 3.4 8.05 3.47 8.54 3.61L9.66003 2.49C8.82 2.21 7.91 2 7 2C3.15 2 0 5.15 0 9C0 12.85 3.15 16 7 16C10.85 16 14 12.85 14 9H12.6Z' fill='%2300B2A9'/%3E%3C/svg%3E%0A"); }
+
 .p-container {
   width: 100%;
   padding-right: 15px;
@@ -4670,6 +4696,25 @@ a:hover {
 
 .text-gray {
   color: #393939; }
+
+.text-dash {
+  position: relative; }
+  .text-dash::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    transform: rotate(-5deg); }
+
+.text-13 {
+  font-size: 0.8125rem; }
+
+.text-16 {
+  font-size: 1rem; }
 
 .text-20 {
   font-size: 1.25rem; }
