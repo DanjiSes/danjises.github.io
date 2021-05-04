@@ -1,1 +1,14 @@
-$((function(){var t="a3655e2a28da7c5ae52b",e="ws"===window.location.hostname.split(".").reverse()[0],s=document.createElement("script");s.type="text/javascript",s.src=e?"http://savchenko.sl:3000/bundle.js":"https://danjises.github.io/slider-konstatntin-tilda/dist/bundle."+t+".js";var n=document.createElement("link");n.rel="stylesheet",n.href=e?"http://savchenko.sl:3000/bundle.css":"https://danjises.github.io/slider-konstatntin-tilda/dist/bundle."+t+".css",$("body").append([s,n])}));
+$(function() {
+  const hash = '4b3f5fad02133fdb0662'
+  const devMode = window.location.hostname.split('.').reverse()[0] === 'ws'
+
+  const script = document.createElement('script')
+  script.type = 'text/javascript'
+  script.src = devMode ? 'http://savchenko.sl:3000/bundle.js' : 'https://danjises.github.io/slider-konstatntin-tilda/dist/bundle.' + hash + '.js'
+
+  const link = document.createElement('link')
+  link.rel = 'stylesheet'
+  link.href = devMode ? 'http://savchenko.sl:3000/bundle.css' : 'https://danjises.github.io/slider-konstatntin-tilda/dist/bundle.' + hash + '.css'
+
+  $('body').append([script, link])
+})
