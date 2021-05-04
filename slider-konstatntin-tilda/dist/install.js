@@ -1,5 +1,5 @@
 $(function() {
-  const hash = '652f0e72ef390f30298d'
+  const hash = '21f4574de33642bc2a87'
   const devMode = window.location.hostname.split('.').reverse()[0] === 'ws'
 
   const script = document.createElement('script')
