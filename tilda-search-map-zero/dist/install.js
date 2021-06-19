@@ -1,7 +1,7 @@
 /* eslint-disable no-var */
 
 $(function() {
-  var hash = 'ce7683402d23d268b39d'
+  var hash = '89a2d99916d63696efdc'
   var devMode = window.location.hostname.split('.').reverse()[0] === 'ws'
 
   var script = document.createElement('script')
