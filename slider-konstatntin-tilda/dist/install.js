@@ -1,4 +1,5 @@
 $(function() {
+  return;
   const hash = '4eb67f21e4546206d617'
   const devMode = window.location.hostname.split('.').reverse()[0] === 'ws'
 
