@@ -11,8 +11,7 @@
     <!--[if IE]>
       <meta http-equiv="X-UA-Compatible" content="IE = edge" />
     <![endif]-->
-
-    <meta name="viewport" content="width=device-width, minimal-ui" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <link rel="stylesheet" href="lpFiles/wog/fonts/fonts.css" />
     <link rel="stylesheet" href="lpFiles/wog/css/main.css" type="text/css" />
@@ -63,7 +62,7 @@
       </header>
 
       <div class="wg-MenuMobile" id="menu">
-        <a href="#" class="wg-MenuMobile__close">+</a>
+        <a href="#closeMenu" class="wg-MenuMobile__close">+</a>
         <div class="wg-MenuMobile__inner">
           <nav class="my-auto">
             <ul>
@@ -1021,22 +1020,18 @@
         grabCursor: true,
         loop: true,
 
-        // effect: "creative",
-        // creativeEffect: {
-        //  prev: {
-        //    shadow: true,
-        //    translate: [0, 0, -400]
-        //  },
-        //  next: {
-        //    translate: ["100%", 0, 0]
-        //  }
-        //},
-
         // Navigation arrows
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+      // Выключение скролла при открытом меню
+      $('[href="#menu"]').click(function () {
+        $("body").addClass("overflow-hidden");
+      });
+      $('[href="#closeMenu"]').click(function () {
+        $("body").removeClass("overflow-hidden");
       });
     </script>
   </body>
