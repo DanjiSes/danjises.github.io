@@ -58,61 +58,67 @@
           <a href="#menu" class="wg-OpenMenuButton">
             <span hidden>Открыть меню</span>
           </a>
+
+          <div class="wg-MenuMobile" id="menu">
+            <a href="#closeMenu" class="wg-MenuMobile__close">+</a>
+            <div class="wg-MenuMobile__inner">
+              <nav class="my-auto">
+                <ul>
+                  <li>
+                    <a href="#">О шоу</a>
+                  </li>
+                  <li>
+                    <a href="#">Саундтреки</a>
+                  </li>
+                  <li>
+                    <a href="#">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="#">Как добраться</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div>
+                <a
+                  href="tel:+7 (925) 726-40-05"
+                  class="d-block wg-corners px-3 py-2 wg-corners-hover"
+                  >+7 (925) 726-40-05</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
-      <div class="wg-MenuMobile" id="menu">
-        <a href="#closeMenu" class="wg-MenuMobile__close">+</a>
-        <div class="wg-MenuMobile__inner">
-          <nav class="my-auto">
-            <ul>
-              <li>
-                <a href="#">О шоу</a>
-              </li>
-              <li>
-                <a href="#">Саундтреки</a>
-              </li>
-              <li>
-                <a href="#">Отзывы</a>
-              </li>
-              <li>
-                <a href="#">Как добраться</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div>
-            <a
-              href="tel:+7 (925) 726-40-05"
-              class="d-block wg-corners px-3 py-2"
-              >+7 (925) 726-40-05</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <main>
-        <div class="vh-100 d-flex align-items-center position-relative">
+      <main class="overflow-hidden">
+        <div
+          class="d-flex align-items-center position-relative"
+          style="padding-top: 145px"
+        >
           <img
-            class="position-absolute"
-            style="
-              left: -46%;
-              top: 28%;
-              width: 100%;
-              z-index: -1;
-              transform: rotate(28deg);
-            "
+            class="wg-first-decor-lines d-sm-none"
+            src="lpFiles/wog/images/decor-lines.svg"
+            alt=""
+          />
+          <img
+            class="wg-first-decor"
             src="lpFiles/wog/images/sphere.png"
             alt=""
           />
 
-          <div class="container text-center">
+          <div class="container text-center text-sm-start pt-sm-5">
             <div class="wg-DateStart wg-corners my-4">26 августа</div>
 
-            <h1 class="h1">Шоу саундтреков из популярных видеоигр</h1>
+            <h1 class="h1">
+              Шоу саундтреков <br class="d-none d-sm-block" />
+              из популярных видеоигр
+            </h1>
 
             <p>
-              К-к-к-комбо визуальных эффектов, светового шоу и мощного звука
+              К-к-к-комбо визуальных эффектов, светового шоу
+              <br class="d-none d-sm-block" />
+              и мощного звука
             </p>
 
             <div class="glitch-button mt-4">
@@ -120,86 +126,162 @@
             </div>
           </div>
         </div>
+        <div class="py-sm-5"></div>
 
-        <div class="container text-center py-5">
-          <h2 class="h1 mb-3">При поддержке</h2>
+        <div class="position-relative">
+          <img
+            src="lpFiles/wog/images/decor-info-line.svg"
+            alt=""
+            class="d-none d-lg-inline position-absolute"
+            style="top: 50%; left: 0; width: 100%; z-index: -1"
+          />
+          <div class="container text-center py-5">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-4">
+                <h2 class="h1 mb-4 mb-lg-0 bg-black">При поддержке</h2>
+              </div>
+              <div class="col-12 col-lg-7 offset-lg-1">
+                <div class="js-sponsors-slider">
+                  <div>
+                    <div class="px-3">
+                      <a href="#" target="_blank">
+                        <img
+                          src="https://picsum.photos/200/200"
+                          alt=""
+                          class="w-100"
+                        />
+                      </a>
+                    </div>
+                  </div>
 
-          <div
-            class="d-flex flex-wrap justify-content-center align-items-center"
-          >
-            <div style="max-width: 60px" class="m-2">
-              <a href="#" target="_blank">
-                <img src="https://picsum.photos/200/200" alt="" class="w-100" />
-              </a>
-            </div>
+                  <div>
+                    <div class="px-3">
+                      <a href="#" target="_blank">
+                        <img
+                          src="https://picsum.photos/200/200"
+                          alt=""
+                          class="w-100"
+                        />
+                      </a>
+                    </div>
+                  </div>
 
-            <div style="max-width: 60px" class="m-2">
-              <a href="#" target="_blank">
-                <img src="https://picsum.photos/200/200" alt="" class="w-100" />
-              </a>
-            </div>
+                  <div>
+                    <div class="px-3">
+                      <a href="#" target="_blank">
+                        <img
+                          src="https://picsum.photos/200/200"
+                          alt=""
+                          class="w-100"
+                        />
+                      </a>
+                    </div>
+                  </div>
 
-            <div style="max-width: 60px" class="m-2">
-              <a href="#" target="_blank">
-                <img src="https://picsum.photos/200/200" alt="" class="w-100" />
-              </a>
-            </div>
+                  <div>
+                    <div class="px-3">
+                      <a href="#" target="_blank">
+                        <img
+                          src="https://picsum.photos/200/200"
+                          alt=""
+                          class="w-100"
+                        />
+                      </a>
+                    </div>
+                  </div>
 
-            <div style="max-width: 60px" class="m-2">
-              <a href="#" target="_blank">
-                <img src="https://picsum.photos/200/200" alt="" class="w-100" />
-              </a>
-            </div>
+                  <div>
+                    <div class="px-3">
+                      <a href="#" target="_blank">
+                        <img
+                          src="https://picsum.photos/200/200"
+                          alt=""
+                          class="w-100"
+                        />
+                      </a>
+                    </div>
+                  </div>
 
-            <div style="max-width: 60px" class="m-2">
-              <a href="#" target="_blank">
-                <img src="https://picsum.photos/200/200" alt="" class="w-100" />
-              </a>
-            </div>
+                  <div>
+                    <div class="px-3">
+                      <a href="#" target="_blank">
+                        <img
+                          src="https://picsum.photos/200/200"
+                          alt=""
+                          class="w-100"
+                        />
+                      </a>
+                    </div>
+                  </div>
 
-            <div style="max-width: 60px" class="m-2">
-              <a href="#" target="_blank">
-                <img src="https://picsum.photos/200/200" alt="" class="w-100" />
-              </a>
-            </div>
-
-            <div style="max-width: 60px" class="m-2">
-              <a href="#" target="_blank">
-                <img src="https://picsum.photos/200/200" alt="" class="w-100" />
-              </a>
+                  <div>
+                    <div class="px-3">
+                      <a href="#" target="_blank">
+                        <img
+                          src="https://picsum.photos/200/200"
+                          alt=""
+                          class="w-100"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
       <section class="py-5 px-2">
         <div class="container">
-          <h2 class="h1 mb-3">О шоу</h2>
-          <p class="font-weight-light">
-            Краткое описание концерта, ниже которого видео. После видео идет
-            дополнительное описание концерта и фото. Краткое описание концерта,
-            ниже которого видео. После видео идет дополнительное описание
-            концерта и фото ополнительное описание концерта и фото и описание
-            концерта и фото.
-          </p>
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h2 class="h1 mb-3">О шоу</h2>
+              <p class="font-weight-light">
+                Краткое описание концерта, ниже которого видео. После видео идет
+                дополнительное описание концерта и фото. Краткое описание
+                концерта, ниже которого видео. После видео идет дополнительное
+                описание концерта и фото ополнительное описание концерта и фото
+                и описание концерта и фото.
+              </p>
+              <p class="font-weight-light d-none d-lg-block">
+                Краткое описание концерта, ниже которого видео. После видео идет
+                дополнительное описание концерта и фото. Краткое описание
+                концерта, ниже которого видео. После видео идет дополнительное
+                описание концерта и фото ополнительное описание концерта и фото.
+              </p>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div
+                class="wg-VideoWrap mb-3"
+                data-html-on-visible='<div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>'
+              ></div>
+            </div>
+          </div>
+
           <div
-            class="wg-VideoWrap mb-3"
-            data-html-on-visible='<div class="embed-responsive embed-responsive-16by9">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>'
+            class="d-lg-none"
+            data-html-on-visible='<p class="font-weight-light">Краткое описание концерта, ниже которого видео. После видео идет дополнительное описание концерта и фото. Краткое описание концерта, ниже которого видео. После видео идет дополнительное описание концерта и фото ополнительное описание концерта и фото.</p>'
           ></div>
-          <p class="font-weight-light">
-            Краткое описание концерта, ниже которого видео. После видео идет
-            дополнительное описание концерта и фото. Краткое описание концерта,
-            ниже которого видео. После видео идет дополнительное описание
-            концерта и фото ополнительное описание концерта и фото.
-          </p>
 
-          <div class="py-3"></div>
+          <div class="py-3 py-md-2"></div>
 
-          <p class="wg-corners text-center px-3 mt-5 py-2">
-            Купите билеты со скидкой 10% до 26 августа по промокоду:
-            <b class="text-info">games</b>
-          </p>
+          <div class="text-center">
+            <p
+              class="
+                wg-corners
+                text-center
+                px-3
+                mt-5 mt-md-3
+                py-2
+                d-inline-block
+              "
+            >
+              Купите билеты со скидкой 10% до 26 августа по промокоду:
+              <b class="text-info">games</b>
+            </p>
+          </div>
 
           <div class="text-center">
             <a href="#sessions" class="wg-Btn"> Купить билеты </a>
@@ -403,8 +485,17 @@
             <h2 class="h1">Сеансы</h2>
           </div>
 
-          <div class="mt-4">
-            <div>
+          <div
+            class="
+              mt-4
+              mx-auto
+              d-md-flex
+              align-items-center
+              justify-content-between
+            "
+            style="width: 85%"
+          >
+            <div style="min-width: 11rem">
               <div class="text-info">18:00</div>
               <div class="text-secondary">26.08.21</div>
             </div>
@@ -416,11 +507,22 @@
               </div>
             </div>
 
-            <a class="wg-Btn" target="_blank" href="#"> Купить билеты </a>
+            <a class="wg-Btn text-nowrap" target="_blank" href="#">
+              Купить билеты
+            </a>
           </div>
 
-          <div class="mt-4">
-            <div>
+          <div
+            class="
+              mt-4
+              mx-auto
+              d-md-flex
+              align-items-center
+              justify-content-between
+            "
+            style="width: 85%"
+          >
+            <div style="min-width: 11rem">
               <div class="text-info">18:00</div>
               <div class="text-secondary">26.08.21</div>
             </div>
@@ -432,11 +534,22 @@
               </div>
             </div>
 
-            <a class="wg-Btn" target="_blank" href="#"> Купить билеты </a>
+            <a class="wg-Btn text-nowrap" target="_blank" href="#">
+              Купить билеты
+            </a>
           </div>
 
-          <div class="mt-4">
-            <div>
+          <div
+            class="
+              mt-4
+              mx-auto
+              d-md-flex
+              align-items-center
+              justify-content-between
+            "
+            style="width: 85%"
+          >
+            <div style="min-width: 11rem">
               <div class="text-info">18:00</div>
               <div class="text-secondary">26.08.21</div>
             </div>
@@ -448,7 +561,9 @@
               </div>
             </div>
 
-            <a class="wg-Btn" target="_blank" href="#"> Купить билеты </a>
+            <a class="wg-Btn text-nowrap" target="_blank" href="#">
+              Купить билеты
+            </a>
           </div>
         </div>
       </section>
@@ -463,11 +578,11 @@
               <!-- Slides -->
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -500,11 +615,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -537,11 +652,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -574,11 +689,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -611,11 +726,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -648,11 +763,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -685,11 +800,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -722,11 +837,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -759,11 +874,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -796,11 +911,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="wg-Review">
+                <div class="wg-Review mx-md-3">
                   <div class="wg-Review__inner bg-black p-3">
                     <div
                       class="mb-3 position-relative"
-                      style="width: 50%; max-width: 250px"
+                      style="width: 50%; max-width: 150px"
                     >
                       <div style="padding-top: 100%"></div>
                       <img
@@ -969,34 +1084,37 @@
         </div>
       </section>
 
-      <footer class="position-relative pt-5 mt-5 pb-4">
+      <footer class="position-relative pt-5 mt-5 pb-4 overflow-hidden">
         <img
           class="position-absolute top-0"
           src="lpFiles/wog/images/footer-devider.svg"
-          style="width: 100%; z-index: -1"
+          style="width: 100%; z-index: -1; height: 10rem"
           alt=""
         />
 
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-5 text-center mb-3">
+            <div class="col-5 col-md-3 col-xxl-2 text-center mb-3">
               <img class="w-100" src="lpFiles/wog/images/logo.png" alt="Лого" />
               <div class="fw-light mt-2">
                 <small>© Атмосфера 2021</small>
               </div>
             </div>
-            <div class="col-6 fw-light text-end">
+            <div class="col-6 col-md-9 col-xxl-10 fw-light text-end">
               <div>ООО «Новостар»</div>
               <div>ИНН 4345462123</div>
               <div>КПП 434501001</div>
               <div>ОГРН 1174350003310</div>
               <div class="my-2">
-                <a href="#" class="text-white text-decoration-none"
+                <a
+                  href="lpFiles/wog/policy.pdf"
+                  target="_blank"
+                  class="text-white"
                   >Политика конфиденциальности</a
                 >
               </div>
               <div>
-                <a href="#" class="text-white text-decoration-none"
+                <a href="#" target="_blank" class="text-white"
                   >Возврат билетов</a
                 >
               </div>
@@ -1010,28 +1128,69 @@
     <script src="lpFiles/wog/js/main.js"></script>
 
     <script>
-      // Слайдер свиедоиграми
+      // Слайдер sponsors
       $(function () {
-        $(".js-albums-slider").slick({ infinite: true });
+        $(".js-sponsors-slider").slick({
+          infinite: true,
+          slidesToShow: 5,
+          autoplay: true,
+          arrows: false,
+        });
       });
-      // Слайдер отзывов
-      const swiper = new Swiper(".swiper", {
-        effect: "cards",
-        grabCursor: true,
-        loop: true,
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+      // Слайдер с виедоиграми
+      $(function () {
+        $(".js-albums-slider").slick({ infinite: true, autoplay: true });
       });
+
+      // Слайдер отзывов
+      if (window.innerWidth >= 768) {
+        const swiper = new Swiper(".swiper", {
+          grabCursor: true,
+          loop: true,
+          slidesPerView: 2,
+
+          // Navigation arrows
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          // Responsive
+          breakpoints: {
+            992: {
+              slidesPerView: 3,
+            },
+          },
+        });
+      } else {
+        const swiper = new Swiper(".swiper", {
+          effect: "cards",
+          grabCursor: true,
+          loop: true,
+
+          // Navigation arrows
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      }
+
       // Выключение скролла при открытом меню
       $('[href="#menu"]').click(function () {
         $("body").addClass("overflow-hidden");
       });
       $('[href="#closeMenu"]').click(function () {
         $("body").removeClass("overflow-hidden");
+      });
+      // Купить билеты
+      $('a[href="#sessions"]').click(function (e) {
+        var el = document.querySelector(this.attributes.href.nodeValue);
+        if (el.scrollIntoView) {
+          e.preventDefault();
+          el.scrollIntoView();
+        }
       });
     </script>
   </body>
