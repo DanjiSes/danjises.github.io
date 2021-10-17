@@ -18,6 +18,11 @@
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
+    <!-- Сюда нужно вставить ВАШ апи ключ яндекс карт. Сейчас введен мой ключ разработчика и может закончиться в любой момент.  -->
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=9f727eab-f942-4906-b932-f287937cfb3c"
+      type="text/javascript"
+    ></script>
   </head>
   <body class="main-page">
     <script type="application/ld+json">
@@ -128,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="py-sm-5"></div>
+        <div class="py-sm-4"></div>
 
         <div class="position-relative">
           <img
@@ -137,7 +142,7 @@
             class="d-none d-lg-inline position-absolute"
             style="top: 50%; left: 0; width: 100%; z-index: -1"
           />
-          <div class="container text-center py-5">
+          <div class="container text-center py-4">
             <div class="row align-items-center">
               <div class="col-12 col-lg-4">
                 <h2 class="h1 mb-4 mb-lg-0 bg-black">При поддержке</h2>
@@ -253,12 +258,59 @@
               </p>
             </div>
             <div class="col-12 col-lg-7">
-              <div
-                class="wg-VideoWrap mb-3"
-                data-html-on-visible='<div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>'
-              ></div>
+              <div class="wg-VideoWrap mb-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <div
+                    id="about-youtube-player"
+                    data-youtube-viedo="M7lc1UVf-VE"
+                  ></div>
+                  <div
+                    class="
+                      wg-VideoWrap__preview
+                      position-absolute
+                      top-0
+                      left-0
+                      w-100
+                      h-100
+                    "
+                    onclick='this.style.display = "none"; wgYT["about-youtube-player"].playVideo();'
+                  >
+                    <img src="lpFiles/wog/images/video-preview.png" alt="" />
+                    <button>
+                      <span hidden>Воспроизвести видео</span>
+                      <svg
+                        width="104"
+                        height="104"
+                        viewBox="0 0 104 104"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="52" cy="52" r="51.5" stroke="#2FFFC1" />
+                        <g opacity="0.8">
+                          <mask id="path-2-inside-1" fill="white">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M51.5667 83.2C69.0373 83.2 83.2 69.0373 83.2 51.5667C83.2 34.0961 69.0373 19.9333 51.5667 19.9333C34.0961 19.9333 19.9333 34.0961 19.9333 51.5667C19.9333 69.0373 34.0961 83.2 51.5667 83.2ZM46.3891 59.0611C46.3891 59.8309 47.2224 60.312 47.8891 59.9271L60.7057 52.5274C61.3724 52.1425 61.3724 51.1802 60.7057 50.7953L47.8891 43.3956C47.2224 43.0107 46.3891 43.4919 46.3891 44.2617V59.0611Z"
+                            />
+                          </mask>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M51.5667 83.2C69.0373 83.2 83.2 69.0373 83.2 51.5667C83.2 34.0961 69.0373 19.9333 51.5667 19.9333C34.0961 19.9333 19.9333 34.0961 19.9333 51.5667C19.9333 69.0373 34.0961 83.2 51.5667 83.2ZM46.3891 59.0611C46.3891 59.8309 47.2224 60.312 47.8891 59.9271L60.7057 52.5274C61.3724 52.1425 61.3724 51.1802 60.7057 50.7953L47.8891 43.3956C47.2224 43.0107 46.3891 43.4919 46.3891 44.2617V59.0611Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M47.8891 59.9271L48.3891 60.7931L47.8891 59.9271ZM60.7057 52.5274L61.2057 53.3934H61.2057L60.7057 52.5274ZM60.7057 50.7953L61.2057 49.9293L60.7057 50.7953ZM47.8891 43.3956L48.3891 42.5296L47.8891 43.3956ZM82.2 51.5667C82.2 68.485 68.485 82.2 51.5667 82.2V84.2C69.5896 84.2 84.2 69.5896 84.2 51.5667H82.2ZM51.5667 20.9333C68.485 20.9333 82.2 34.6484 82.2 51.5667H84.2C84.2 33.5438 69.5896 18.9333 51.5667 18.9333V20.9333ZM20.9333 51.5667C20.9333 34.6484 34.6483 20.9333 51.5667 20.9333V18.9333C33.5438 18.9333 18.9333 33.5438 18.9333 51.5667H20.9333ZM51.5667 82.2C34.6483 82.2 20.9333 68.485 20.9333 51.5667H18.9333C18.9333 69.5896 33.5438 84.2 51.5667 84.2V82.2ZM47.3891 59.0611H47.3891H45.3891C45.3891 60.6007 47.0557 61.5629 48.3891 60.7931L47.3891 59.0611ZM60.2057 51.6614L47.3891 59.0611L48.3891 60.7931L61.2057 53.3934L60.2057 51.6614ZM60.2057 51.6614L60.2057 51.6614L61.2057 53.3934C62.5391 52.6236 62.5391 50.6991 61.2057 49.9293L60.2057 51.6614ZM47.3891 44.2617L60.2057 51.6614L61.2057 49.9293L48.3891 42.5296L47.3891 44.2617ZM47.3891 44.2617V44.2617L48.3891 42.5296C47.0557 41.7598 45.3891 42.7221 45.3891 44.2617H47.3891ZM47.3891 59.0611V44.2617H45.3891V59.0611H47.3891Z"
+                            fill="white"
+                            mask="url(#path-2-inside-1)"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -297,9 +349,9 @@
             На шоу вы услышите саундтреки из популярных видеоигр
           </p>
 
-          <div class="js-albums-slider">
+          <div class="js-albums-slider wg-AlbumsSlider slick-slider">
             <div>
-              <div class="js-albums-slider__slide">
+              <div class="wg-AlbumsSlider__slide">
                 <div class="wg-Album">
                   <div class="wg-Album__preview">
                     <img
@@ -307,43 +359,13 @@
                       alt="HALF-LIFE 2"
                     />
                   </div>
-                  <strong class="wg-Album__name">HALF-LIFE 0</strong>
-                </div>
-
-                <div class="wg-Album">
-                  <div class="wg-Album__preview">
-                    <img
-                      src="lpFiles/wog/images/albums/01.png"
-                      alt="HALF-LIFE 2"
-                    />
-                  </div>
-                  <strong class="wg-Album__name">HALF-LIFE 1</strong>
-                </div>
-
-                <div class="wg-Album">
-                  <div class="wg-Album__preview">
-                    <img
-                      src="lpFiles/wog/images/albums/01.png"
-                      alt="HALF-LIFE 2"
-                    />
-                  </div>
-                  <strong class="wg-Album__name">HALF-LIFE 2</strong>
-                </div>
-
-                <div class="wg-Album">
-                  <div class="wg-Album__preview">
-                    <img
-                      src="lpFiles/wog/images/albums/01.png"
-                      alt="HALF-LIFE 2"
-                    />
-                  </div>
-                  <strong class="wg-Album__name">HALF-LIFE 3</strong>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
                 </div>
               </div>
             </div>
 
             <div>
-              <div class="js-albums-slider__slide">
+              <div class="wg-AlbumsSlider__slide">
                 <div class="wg-Album">
                   <div class="wg-Album__preview">
                     <img
@@ -351,43 +373,13 @@
                       alt="HALF-LIFE 2"
                     />
                   </div>
-                  <strong class="wg-Album__name">HALF-LIFE 1</strong>
-                </div>
-
-                <div class="wg-Album">
-                  <div class="wg-Album__preview">
-                    <img
-                      src="lpFiles/wog/images/albums/01.png"
-                      alt="HALF-LIFE 2"
-                    />
-                  </div>
-                  <strong class="wg-Album__name">HALF-LIFE 2</strong>
-                </div>
-
-                <div class="wg-Album">
-                  <div class="wg-Album__preview">
-                    <img
-                      src="lpFiles/wog/images/albums/01.png"
-                      alt="HALF-LIFE 2"
-                    />
-                  </div>
-                  <strong class="wg-Album__name">HALF-LIFE 3</strong>
-                </div>
-
-                <div class="wg-Album">
-                  <div class="wg-Album__preview">
-                    <img
-                      src="lpFiles/wog/images/albums/01.png"
-                      alt="HALF-LIFE 2"
-                    />
-                  </div>
-                  <strong class="wg-Album__name">HALF-LIFE 4</strong>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
                 </div>
               </div>
             </div>
 
             <div>
-              <div class="js-albums-slider__slide">
+              <div class="wg-AlbumsSlider__slide">
                 <div class="wg-Album">
                   <div class="wg-Album__preview">
                     <img
@@ -395,43 +387,13 @@
                       alt="HALF-LIFE 2"
                     />
                   </div>
-                  <strong class="wg-Album__name">HALF-LIFE 2</strong>
-                </div>
-
-                <div class="wg-Album">
-                  <div class="wg-Album__preview">
-                    <img
-                      src="lpFiles/wog/images/albums/01.png"
-                      alt="HALF-LIFE 2"
-                    />
-                  </div>
-                  <strong class="wg-Album__name">HALF-LIFE 3</strong>
-                </div>
-
-                <div class="wg-Album">
-                  <div class="wg-Album__preview">
-                    <img
-                      src="lpFiles/wog/images/albums/01.png"
-                      alt="HALF-LIFE 2"
-                    />
-                  </div>
-                  <strong class="wg-Album__name">HALF-LIFE 4</strong>
-                </div>
-
-                <div class="wg-Album">
-                  <div class="wg-Album__preview">
-                    <img
-                      src="lpFiles/wog/images/albums/01.png"
-                      alt="HALF-LIFE 2"
-                    />
-                  </div>
-                  <strong class="wg-Album__name">HALF-LIFE 5</strong>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
                 </div>
               </div>
             </div>
 
             <div>
-              <div class="js-albums-slider__slide">
+              <div class="wg-AlbumsSlider__slide">
                 <div class="wg-Album">
                   <div class="wg-Album__preview">
                     <img
@@ -439,9 +401,13 @@
                       alt="HALF-LIFE 2"
                     />
                   </div>
-                  <strong class="wg-Album__name">HALF-LIFE 3</strong>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
                 </div>
+              </div>
+            </div>
 
+            <div>
+              <div class="wg-AlbumsSlider__slide">
                 <div class="wg-Album">
                   <div class="wg-Album__preview">
                     <img
@@ -449,9 +415,13 @@
                       alt="HALF-LIFE 2"
                     />
                   </div>
-                  <strong class="wg-Album__name">HALF-LIFE 4</strong>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
                 </div>
+              </div>
+            </div>
 
+            <div>
+              <div class="wg-AlbumsSlider__slide">
                 <div class="wg-Album">
                   <div class="wg-Album__preview">
                     <img
@@ -459,9 +429,13 @@
                       alt="HALF-LIFE 2"
                     />
                   </div>
-                  <strong class="wg-Album__name">HALF-LIFE 5</strong>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
                 </div>
+              </div>
+            </div>
 
+            <div>
+              <div class="wg-AlbumsSlider__slide">
                 <div class="wg-Album">
                   <div class="wg-Album__preview">
                     <img
@@ -469,7 +443,259 @@
                       alt="HALF-LIFE 2"
                     />
                   </div>
-                  <strong class="wg-Album__name">HALF-LIFE 6</strong>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="wg-AlbumsSlider__slide">
+                <div class="wg-Album">
+                  <div class="wg-Album__preview">
+                    <img
+                      src="lpFiles/wog/images/albums/01.png"
+                      alt="HALF-LIFE 2"
+                    />
+                  </div>
+                  <strong class="wg-Album__name">HALF-LIFE</strong>
                 </div>
               </div>
             </div>
@@ -480,7 +706,7 @@
           <div class="position-relative pt-2" id="sessions">
             <img
               class="position-absolute top-50 start-50 translate-middle"
-              style="width: 90%"
+              style="width: 90%; z-index: -1"
               src="lpFiles/wog/images/seans-decor.svg"
               alt=""
             />
@@ -509,7 +735,11 @@
               </div>
             </div>
 
-            <a class="wg-Btn text-nowrap" target="_blank" href="#">
+            <a
+              class="wg-Btn text-nowrap"
+              target="_blank"
+              href="https://iframeab-pre5472.intickets.ru/seance/12006786"
+            >
               Купить билеты
             </a>
           </div>
@@ -536,7 +766,11 @@
               </div>
             </div>
 
-            <a class="wg-Btn text-nowrap" target="_blank" href="#">
+            <a
+              class="wg-Btn text-nowrap"
+              target="_blank"
+              href="https://iframeab-pre5472.intickets.ru/seance/12006786"
+            >
               Купить билеты
             </a>
           </div>
@@ -563,7 +797,11 @@
               </div>
             </div>
 
-            <a class="wg-Btn text-nowrap" target="_blank" href="#">
+            <a
+              class="wg-Btn text-nowrap"
+              target="_blank"
+              href="https://iframeab-pre5472.intickets.ru/seance/12006786"
+            >
               Купить билеты
             </a>
           </div>
@@ -574,7 +812,7 @@
           <h2 class="h1 text-center mb-4">Отзывы</h2>
 
           <!-- Slider main container -->
-          <div class="wg-ReviewsSlider swiper">
+          <div class="wg-ReviewsSlider swiper js-reviews-slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -992,14 +1230,34 @@
 
           <div class="wg-Map">
             <div class="wg-Map__inner">
-              <div
-                class="embed-responsive embed-responsive-16by9"
-                data-html-on-visible='<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac01ae473da5ff371c97d7528904c9f5c3cb74386a31c7f130b617ff272f1a192&amp;source=constructor" frameborder="0"></iframe>'
-              >
+              <div class="embed-responsive embed-responsive-16by9">
                 <!-- Сюда будет вставляться карта когда до этого места доскроллят -->
+                <div
+                  id="map"
+                  class="position-absolute left-0 top-0 w-100 h-100"
+                ></div>
               </div>
             </div>
           </div>
+
+          <script type="text/javascript">
+            // Функция ymaps.ready() будет вызвана, когда
+            // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+            ymaps.ready(gwInitMap);
+            function gwInitMap() {
+              // Создание карты.
+              var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [55.76, 37.64],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 7,
+              });
+            }
+          </script>
 
           <div class="text-center">
             <a href="#sessions" class="wg-Btn mt-4 mb-5"> Купить билеты </a>
@@ -1140,14 +1398,49 @@
         });
       });
 
-      // Слайдер с виедоиграми
+      // Слайдер с виедоиграми на десктопе
+
+      if (window.innerWidth <= 768) {
+        // Меняю структуру блоков
+        var wgAlbums = chunkArray(
+          $(".js-albums-slider .wg-Album").toArray(),
+          4
+        );
+        var wgAlbumsSlides = wgAlbums.reduce(function (slidesArr, albumsArray) {
+          var slideEl = $(
+            '<div><div class="wg-AlbumsSlider__slide"></div></div>'
+          );
+          slideEl.find(".wg-AlbumsSlider__slide").append(albumsArray);
+          return [slideEl].concat(slidesArr);
+        }, []);
+        $(".js-albums-slider").empty().append(wgAlbumsSlides);
+      }
+
       $(function () {
-        $(".js-albums-slider").slick({ infinite: true, autoplay: true });
+        $(".js-albums-slider").slick({
+          infinite: true,
+          autoplay: true,
+          slidesToShow: 7,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
       });
 
       // Слайдер отзывов
       if (window.innerWidth >= 768) {
-        const swiper = new Swiper(".swiper", {
+        const swiper = new Swiper(".js-reviews-slider", {
           grabCursor: true,
           loop: true,
           slidesPerView: 2,
@@ -1166,7 +1459,7 @@
           },
         });
       } else {
-        const swiper = new Swiper(".swiper", {
+        const swiper = new Swiper(".js-reviews-slider", {
           effect: "cards",
           grabCursor: true,
           loop: true,
