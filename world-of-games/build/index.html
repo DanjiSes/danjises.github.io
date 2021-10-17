@@ -18,11 +18,6 @@
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
-    <!-- Сюда нужно вставить ВАШ апи ключ яндекс карт. Сейчас введен мой ключ разработчика и может закончиться в любой момент.  -->
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=9f727eab-f942-4906-b932-f287937cfb3c"
-      type="text/javascript"
-    ></script>
   </head>
   <body class="main-page">
     <script type="application/ld+json">
@@ -1230,34 +1225,14 @@
 
           <div class="wg-Map">
             <div class="wg-Map__inner">
-              <div class="embed-responsive embed-responsive-16by9">
+              <div
+                class="embed-responsive embed-responsive-16by9"
+                data-html-on-visible='<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac01ae473da5ff371c97d7528904c9f5c3cb74386a31c7f130b617ff272f1a192&amp;source=constructor" frameborder="0"></iframe>'
+              >
                 <!-- Сюда будет вставляться карта когда до этого места доскроллят -->
-                <div
-                  id="map"
-                  class="position-absolute left-0 top-0 w-100 h-100"
-                ></div>
               </div>
             </div>
           </div>
-
-          <script type="text/javascript">
-            // Функция ymaps.ready() будет вызвана, когда
-            // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-            ymaps.ready(gwInitMap);
-            function gwInitMap() {
-              // Создание карты.
-              var myMap = new ymaps.Map("map", {
-                // Координаты центра карты.
-                // Порядок по умолчанию: «широта, долгота».
-                // Чтобы не определять координаты центра карты вручную,
-                // воспользуйтесь инструментом Определение координат.
-                center: [55.76, 37.64],
-                // Уровень масштабирования. Допустимые значения:
-                // от 0 (весь мир) до 19.
-                zoom: 7,
-              });
-            }
-          </script>
 
           <div class="text-center">
             <a href="#sessions" class="wg-Btn mt-4 mb-5"> Купить билеты </a>
@@ -1348,7 +1323,13 @@
         <img
           class="position-absolute top-0"
           src="lpFiles/wog/images/footer-devider.svg"
-          style="width: 100%; z-index: -1; height: 10rem"
+          style="
+            width: 100%;
+            z-index: -1;
+            height: 10rem;
+            object-fit: cover;
+            object-position: top;
+          "
           alt=""
         />
 
