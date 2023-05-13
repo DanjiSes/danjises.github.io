@@ -1,7 +1,7 @@
 /* eslint-disable no-var */
 
 $(function () {
-  var hash = "af5894b4ff38bfe0697d";
+  var hash = "8beebb43b49b0051e740";
   var devMode =
     window._devMode !== undefined
       ? window._devMode
