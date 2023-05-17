@@ -6,7 +6,7 @@ $(function () {
   script.type = "text/javascript";
   script.src = devMode
     ? "http://savchenko.sl:3000/bundle.js"
-    : "https://danjises.github.io/slider-konstatntin-tilda/dist/bundle." +
+    : "https://danjises.github.io/tilda-custom-slider-v2/dist/bundle." +
       hash +
       ".js";
 
@@ -14,7 +14,7 @@ $(function () {
   link.rel = "stylesheet";
   link.href = devMode
     ? "http://savchenko.sl:3000/bundle.css"
-    : "https://danjises.github.io/slider-konstatntin-tilda/dist/bundle." +
+    : "https://danjises.github.io/tilda-custom-slider-v2/dist/bundle." +
       hash +
       ".css";
 
