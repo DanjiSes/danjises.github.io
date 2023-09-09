@@ -1,1 +1,1 @@
-.jScroll{-moz-user-select:none;-webkit-user-select:none;user-select:none}
+.jScroll{-moz-user-select:none;-webkit-user-select:none;user-select:none;overflow:hidden !important;}
